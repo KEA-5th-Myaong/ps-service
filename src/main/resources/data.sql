@@ -1,4 +1,4 @@
-insert into "ps" (ps_id, member_id, title, position, reason, content, created_at, updated_at) values
+insert into `ps` (ps_id, member_id, title, position, reason, content, created_at, updated_at) values
 	(1, 5, 'Eius cupiditate a suscipit.', '전산 자료 입력원 및 사무 보조원', 'Deleniti explicabo.', 'Reprehenderit libero omnis enim id autem corporis. Veritatis unde alias. Assumenda ducimus facilis sit id.
 Sequi quisquam libero ipsam dolor molestiae.', now(), now()),
 	(2, 5, 'Reprehenderit facere assumenda minus molestias.', '기타 채굴 및 토목 관련 종사자', 'Iste debitis.', 'Repudiandae iusto earum aspernatur esse dolor. Sunt mollitia quos quaerat ratione quae a. Temporibus porro incidunt omnis maxime est sequi pariatur.', now(), now()),
