@@ -29,13 +29,11 @@ public class Ps extends BaseEntity {
 	private String position;
 
 	// 지원 사유
-	@Lob
-	@Column(name = "reason", nullable = false)
+	@Column(name = "reason", nullable = false, columnDefinition = "text")
 	private String reason;
 
 	// 자기소개
-	@Lob
-	@Column(name = "content", nullable = false)
+	@Column(name = "content", nullable = false, columnDefinition = "text")
 	private String content;
 
 	@Builder
