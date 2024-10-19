@@ -79,15 +79,16 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@Override
 	protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers, HttpStatusCode statusCode, WebRequest request) {
+		log.error(ex.getMessage(), ex);
 
 		String message;
-		if (body == null)
-			if (ex instanceof ErrorResponse errorResponse)
+		if (ex instanceof ErrorResponse errorResponse)
+			if (body == null)
 				message = errorResponse.updateAndGetBody(this.getMessageSource(), LocaleContextHolder.getLocale()).getDetail();
 			else
-				message = "Internal server error";
+				message = ((ErrorResponse) body).getDetailMessageCode();
 		else
-			message = ((ErrorResponse) body).getDetailMessageCode();
+			message = ex.getMessage();
 
 		body = ApiResponse.onFailure(statusCode.value(), message);
 

@@ -26,12 +26,10 @@ public class Ps extends BaseEntity {
 	@Column(name = "position", nullable = false)
 	private String position;
 
-	@Lob
-	@Column(name = "reason", nullable = false)
+	@Column(name = "reason", nullable = false, columnDefinition = "text")
 	private String reason;
 
-	@Lob
-	@Column(name = "content", nullable = false)
+	@Column(name = "content", nullable = false, columnDefinition = "text")
 	private String content;
 
 	@Builder
