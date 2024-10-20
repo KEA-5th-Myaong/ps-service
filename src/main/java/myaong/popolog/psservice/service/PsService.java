@@ -22,6 +22,7 @@ public class PsService {
 
     private final PsRepository psRepository;
 
+    @org.springframework.transaction.annotation.Transactional(readOnly = true)
     public PsListResponse getPsList() {
 
         List<PsResponse> psResponses = psRepository.findAll().stream()
@@ -31,6 +32,8 @@ public class PsService {
         return new PsListResponse(psResponses);
     }
 
+
+    @org.springframework.transaction.annotation.Transactional(readOnly = true)
     public PsResponse getPs(Long psId) {
         Ps ps = psRepository.findById(1L).orElseThrow(() -> new RuntimeException("PS not found"));
         return new PsResponse(ps.getTitle(), ps.getPosition(), ps.getReason(), ps.getContent());
