@@ -1,8 +1,6 @@
-insert into `ps` (ps_id, member_id, title, position, reason, content, created_at, updated_at) values
-	(1, 5, 'Eius cupiditate a suscipit.', '전산 자료 입력원 및 사무 보조원', 'Deleniti explicabo.', 'Reprehenderit libero omnis enim id autem corporis. Veritatis unde alias. Assumenda ducimus facilis sit id.
-Sequi quisquam libero ipsam dolor molestiae.', now(), now()),
-	(2, 5, 'Reprehenderit facere assumenda minus molestias.', '기타 채굴 및 토목 관련 종사자', 'Iste debitis.', 'Repudiandae iusto earum aspernatur esse dolor. Sunt mollitia quos quaerat ratione quae a. Temporibus porro incidunt omnis maxime est sequi pariatur.', now(), now()),
-	(3, 5, 'Nemo autem minima. Asperiores aspernatur maxime.', '주차 관리원 및 안내원', 'Vero culpa ipsum.', 'Aspernatur assumenda minus. Occaecati laboriosam minus facilis soluta. Ab repellat reiciendis earum. Corporis asperiores aut iure deleniti dolor dolores.', now(), now()),
-	(4, 5, 'Provident reiciendis eum quos impedit sapiente.', '재단사', 'Impedit doloribus.', 'A ea at. Alias recusandae voluptatibus quod quisquam id eaque. Illo iste eveniet officiis fugiat architecto occaecati accusantium.', now(), now()),
-	(5, 5, 'Excepturi quod eius accusamus vitae numquam.', '한식 주방장 및 조리사', 'Officia occaecati.', 'Quis commodi ex nisi sequi voluptate ipsa. Assumenda dolor debitis illum. Cupiditate ipsam excepturi.', now(), now());
-
+insert into "ps" (ps_id, member_id, title, position, reason, content, created_at, updated_at) values
+	(1, 5, '열심히 할게요', '전산 자료 입력원 및 사무 보조원', '돈이 궁해서', '열심히 할게요. 뽑아주세요.', now(), now()),
+	(2, 5, '팀과 함께 성장하고 싶습니다', '토목 엔지니어', '어린 시절부터 건설에 관심이 많았습니다.', '다양한 프로젝트를 통해 쌓은 경험을 바탕으로, 귀사에서 성과를 내고 싶습니다.', now(), now()),
+	(3, 5, '책임감을 가지고 임하겠습니다', '주차 관리원', '고객 응대와 관리에 관심이 많습니다.', '주차장에서 발생하는 다양한 상황들을 빠르게 해결하며, 고객 만족을 이끌어내겠습니다.', now(), now()),
+	(4, 5, '창의력을 발휘하고 싶습니다', '패션 디자이너', '옷을 통해 사람들에게 행복을 전하고 싶습니다.', '나만의 창의적인 아이디어로 트렌드를 선도하며, 귀사의 성장을 도모하고 싶습니다.', now(), now()),
+	(5, 5, '고객을 위한 최고의 요리를 만들겠습니다', '한식 주방장', '한국 음식의 깊은 맛을 알리고 싶습니다.', '최고의 재료와 정성을 다해 고객에게 만족을 드리는 요리를 제공하겠습니다.', now(), now());
