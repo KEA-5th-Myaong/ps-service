@@ -10,7 +10,7 @@ import myaong.popolog.psservice.dto.response.PsListResponse;
 import myaong.popolog.psservice.entity.Ps;
 import myaong.popolog.psservice.repository.PsRepository;
 import org.springframework.stereotype.Service;
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
