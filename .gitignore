@@ -36,7 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
+# mac os
 .DS_Store
-._.DS_Store
-**/.DS_Store
-**/._.DS_Store
+
+*.yml
+*.sql

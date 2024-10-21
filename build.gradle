@@ -23,6 +23,12 @@ repositories {
     mavenCentral()
 }
 
+bootJar{
+    archivesBaseName = 'popolog-ps-service'
+    archiveFileName = 'popolog-ps-service.jar'
+    archiveVersion = "0.0.0"
+}
+
 ext {
     set('springCloudVersion', "2023.0.3")
 }
@@ -34,7 +40,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
     // Swagger(Spring 3.x.x 이상부터 SpringFox 대신, SpringDoc)
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
 
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
