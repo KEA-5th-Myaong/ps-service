@@ -1,6 +1,6 @@
 server:
-  port: 8000
-  address: 61.109.238.254
+  port: 8080
+
 
 spring:
   application:

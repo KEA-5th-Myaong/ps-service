@@ -40,12 +40,16 @@ public class PsService {
     }
 
     public PsIdResponse createPs(PsRequest psRequest) {
+        Long memberId = 5L;  // 고정된 memberId 값
+
         Ps ps = Ps.builder()
+                .memberId(memberId)
                 .title(psRequest.getTitle())
                 .position(psRequest.getPosition())
                 .reason(psRequest.getReason())
                 .content(psRequest.getContent())
                 .build();
+
         psRepository.save(ps);
         return new PsIdResponse(ps.getId());
     }

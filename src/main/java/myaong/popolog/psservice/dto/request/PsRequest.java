@@ -6,15 +6,16 @@ import lombok.Getter;
 @Getter
 public class PsRequest {
 
-    @NotBlank
+
+    @NotBlank(message = "제목을 입력해주세요")
     private String title;
 
-    @NotBlank
+    @NotBlank(message = "지원직무를 입력해주세요")
     private String position;
 
-    @NotBlank
+    @NotBlank(message = "지원사유를 입력해주세요")
     private String reason;
 
-    @NotBlank
+    @NotBlank(message = "내용을 입력해주세요")
     private String content;
 }
